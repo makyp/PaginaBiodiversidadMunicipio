@@ -1,0 +1,105 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    margin-top: 0;
+    
+}
+main {
+    margin-bottom: 30px;
+    padding: 30px; /* Agrega un espacio de relleno alrededor del contenido */
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+ h1{
+    margin-top: 0;
+    background-color: #333; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    text-align: center; /* Centra el texto */
+    padding: 10px 0; /* Añade un espacio de relleno alrededor del texto */
+    font-size: 24px; /* Tamaño de fuente para h1 */
+ }
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px; /* Tamaño del texto en pantallas grandes */
+    transition: color 0.3s; /* Transición de color */
+}
+
+/* Estilos para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    nav ul li a {
+        font-size: 16px; /* Tamaño del texto en pantallas pequeñas */
+    }
+}
+/* Estilos para pantallas grandes */
+@media screen and (min-width: 768px) {
+    nav ul {
+        display: flex; /* Permitir el ajuste de elementos en varias líneas */
+        justify-content: center; /* Centrar los elementos en el contenedor */
+    }
+
+    nav ul li {
+        flex-basis: 25%; /* Establecer el ancho de cada elemento en un 25% */
+        text-align: center; /* Centrar el texto */
+    }
+}
+/* Cambiar el color del enlace cuando se pasa el mouse */
+nav ul li a:hover {
+    color: #ffcc00; /* Color al pasar el mouse */
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px; /* Espacio entre contenedores */
+    background: rgba(255, 255, 255, 0.8); /* Fondo con gradiente translúcido */
+    border: 1px solid #ccc; /* Borde sólido de color gris */
+    border-radius: 8px; /* Borde redondeado */
+    padding: 20px; /* Espaciado interno */
+}
+
+
+.columna {
+    flex-basis: calc(50% - 10px); /* Calcula el ancho de cada columna (50% del ancho del contenedor menos 10px de espacio) */
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
