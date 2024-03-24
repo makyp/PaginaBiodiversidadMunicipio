@@ -1,0 +1,71 @@
+.carousel-container {
+  overflow: hidden; /* Oculta el contenido que se desborda */
+  position: relative;
+  width: 100%;
+}
+
+.carousel {
+  display: flex; /* Muestra las cards en línea */
+  transition: transform 0.5s ease; /* Animación de transición */
+}
+
+.prev,
+.next {
+  background: transparent; /* Fondo transparente */
+  border: none; /* Sin borde */
+  font-size: 24px; /* Tamaño de fuente */
+  cursor: pointer; /* Cursor de puntero */
+  position: absolute; /* Posiciona los botones de manera absoluta */
+  top: 50%; /* Centra verticalmente los botones */
+  transform: translateY(-50%); /* Ajusta la posición vertical */
+}
+
+.prev {
+  left: 0; /* Coloca el botón "prev" al inicio */
+}
+
+.next {
+  right: 0; /* Coloca el botón "next" al final */
+}
+
+.card {
+  flex: 0 0 calc(33.33% - 20px);/* Ancho de cada card */
+  margin-right: 20px; /* Espacio entre las cards */
+  padding: 20px; /* Espacio entre las cards */
+  box-sizing: border-box; /* Incluir padding en el ancho */
+  border: 2px solid rgba(0, 255, 0, 0.2); /* Borde de color verde */
+  background-color: rgba(0, 255, 0, 0.2); /* Fondo verde transparente */
+  border-radius: 10px; /* Bordes redondeados */
+}
+
+.card-img-top {
+  width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
+  height: 250px; /* Altura fija para todas las imágenes */
+  object-fit: cover; /* Escala la imagen para que cubra todo el contenedor */
+  border-radius: 10px;
+}
+
+.card-body {
+  padding: 0 10px; /* Padding para la descripción */
+}
+
+.card-title {
+  text-align: center; /* Título centrado */
+  font-size: 16pt; /* Tamaño de fuente del título */
+}
+
+.card-text {
+  text-align: justify; /* Texto justificado */
+}
+
+@media (max-width: 992px) {
+  .card {
+    flex: 0 0 calc(50% - 20px); /* Ancho de la card en pantallas medianas */
+  }
+}
+
+@media (max-width: 600px) {
+  .card {
+    flex: 0 0 calc(100% - 20px); /* Ancho de la card en pantallas pequeñas */
+  }
+}
