@@ -69,16 +69,7 @@ nav ul li a {
 nav ul li a:hover {
     color: #ffcc00; /* Color al pasar el mouse */
 }
-footer {
-    display: none; /* Inicialmente oculto */
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background-color: #48793b;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-}
+
 
 .contenedor {
     display: flex;
@@ -91,10 +82,32 @@ footer {
     padding: 20px; /* Espaciado interno */
 }
 
-
 .columna {
     flex-basis: calc(50% - 10px); /* Calcula el ancho de cada columna (50% del ancho del contenedor menos 10px de espacio) */
 }
 #main-content {
     margin-bottom: 100px; /* Ajusta el espacio entre el contenido y el footer según sea necesario */
+}
+footer {
+    display: none; /* Inicialmente oculto */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #48793b;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+.social-icons a {
+    display: inline-block;
+    margin: 0 20px; /* Espacio entre los iconos */
+    color: #fff;
+
+}
+
+.social-icons img {
+    width: 30px; /* Tamaño de los iconos */
+    height: 30px;
+    vertical-align: middle
+    ;
 }
