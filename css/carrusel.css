@@ -11,9 +11,10 @@
 
 .prev,
 .next {
+  color: #6d9b5f;
   background: transparent; /* Fondo transparente */
   border: none; /* Sin borde */
-  font-size: 24px; /* Tamaño de fuente */
+  font-size: 32px; /* Tamaño de fuente */
   cursor: pointer; /* Cursor de puntero */
   position: absolute; /* Posiciona los botones de manera absoluta */
   top: 50%; /* Centra verticalmente los botones */
@@ -33,8 +34,8 @@
   margin-right: 20px; /* Espacio entre las cards */
   padding: 20px; /* Espacio entre las cards */
   box-sizing: border-box; /* Incluir padding en el ancho */
-  border: 2px solid rgba(0, 255, 0, 0.2); /* Borde de color verde */
-  background-color: rgba(0, 255, 0, 0.2); /* Fondo verde transparente */
+  border: 2px solid #b8dea7; /* Borde de color verde */
+  background-color: #b8dea7; /* Fondo verde transparente */
   border-radius: 10px; /* Bordes redondeados */
 }
 
@@ -52,6 +53,7 @@
 .card-title {
   text-align: center; /* Título centrado */
   font-size: 16pt; /* Tamaño de fuente del título */
+  color: #48793b;
 }
 
 .card-text {

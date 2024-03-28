@@ -3,10 +3,11 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #ddffcb;
 }
 
 header {
-    background-color: #333;
+    background-color: #48793b;
     color: #fff;
     padding: 10px 0;
     margin-top: 0;
@@ -23,7 +24,6 @@ nav ul {
 }
  h1{
     margin-top: 0;
-    background-color: #333; /* Color de fondo */
     color: #fff; /* Color del texto */
     text-align: center; /* Centra el texto */
     padding: 10px 0; /* Añade un espacio de relleno alrededor del texto */
@@ -74,7 +74,7 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    background-color: #333;
+    background-color: #48793b;
     color: #fff;
     text-align: center;
     padding: 10px 0;
@@ -85,8 +85,8 @@ footer {
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 20px; /* Espacio entre contenedores */
-    background: rgba(255, 255, 255, 0.8); /* Fondo con gradiente translúcido */
-    border: 1px solid #ccc; /* Borde sólido de color gris */
+    background: #b8dea7; /* Fondo con gradiente translúcido */
+    border: 1px solid #b8dea7; /* Borde sólido de color gris */
     border-radius: 8px; /* Borde redondeado */
     padding: 20px; /* Espaciado interno */
 }
@@ -97,14 +97,4 @@ footer {
 }
 #main-content {
     margin-bottom: 100px; /* Ajusta el espacio entre el contenido y el footer según sea necesario */
-}
-footer {
-    display: none;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
 }
