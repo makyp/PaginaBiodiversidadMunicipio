@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <title>Pagina Fauna</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/carrusel.css') }}">
+
+</head>
+<body>
+    
+    
+    {% block appbar %}
+    <header>
+        <h1>Municipio de Fúquene</h1>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('index') }}">Descripción</a></li>
+                <li><a href="{{ url_for('flora') }}">Flora</a></li>
+                <li><a href="{{ url_for('fauna') }}">Fauna</a></li>
+            </ul>
+        </nav>
+    </header>
+    {% endblock %}   
+    {% block contenido %}
+    
+    {% endblock %}
+
+    {% block footer %}
+    <footer id ="footer">
+        <p>Elaborado por: &reg; Maira Quiroga || Programa TalentoTech con la Universidad Segio Arboleda</p>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/maira-tatiana-quiroga-peralta-5baa48232/" target="_blank" class="linkedin"
+                title="LinkedIn"><img  src="{{ url_for('static', filename='images/icono_linkedin.png')}}" alt="LinkedIn">LinkedIn</a>
+            <a href="https://github.com/makyp" target="_blank" class ="github"title="GitHub"><img  src="{{ url_for('static', filename='images/icono_github.png')}}"
+                    alt="GitHub">GitHub</a>
+        </div>
+    </footer>
+
+    {% endblock %}
+   
+</body>
+</html>

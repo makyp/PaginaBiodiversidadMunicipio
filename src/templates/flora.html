@@ -1,0 +1,151 @@
+{% extends "layout.html" %}
+{% block contenido %}
+<main id="main-content">
+  <section id="Flora">
+    <h2>Flora</h2>
+    <p>El Municipio de Fúquene se encuentra localizado en Colombia, departamento de Cundinamarca a 118km de Santa Fe
+      de Bogotá, su temperatura es de 13 grados, altura de 2.874 m sobre el nivel del mar. <br>Su población alcanza
+      los 5858 habitantes que se aglutinan en la zona urbana y en sus cuatro veredas: Chinzaque, Nemogá, Taravita y
+      Centro, cuenta con planicies, montañas de más o menos gran altura lugar donde está ubicado el páramo, y dónde
+      aún se encuentran algunas especies de plantas nativas que no han sido exterminadas por el hombre. La información
+      presentada fue tomada de la siguiente página
+      <a href="https://nativasfuquene.blogspot.com/2012/08/plantas-nativas-de-fuquene.html">(flora de Fúquene, por
+        Elsa Carrilo)</a>
+    </p>
+
+    <div class="carousel-container">
+      <button class="prev" onclick="prevSlide()">&#10094;</button>
+      <div class="carousel">
+        <div class="card">
+          <img src="{{ url_for('static', filename='images/alcaparro.jpg') }}" class="card-img-top" alt="Alcaparro">
+          <div class="card-body">
+            <h5 class="card-title">Alcaparro</h5>
+            <p class="card-text">Es uno de los árboles con floración más atractiva en los climas fríos, este en
+              ciertas temporadas del año se cubre con brillantes flores amarillas, que lo vuelven visible desde muy
+              lejos. En los alrededores de Bogotá no crece silvestre, sin embargo se lo cultiva con mucha frecuencia.
+              En los jardines donde crece, ante una mirada superficial, el alcaparro puede confundirse con el chicalá
+              (Tecoma stans). Sin embargo, este último árbol tiene flores en forma de trompeta, mientras que las del
+              alcaparro son más cortas, con los pétalos separados.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="{{ url_for('static', filename='images/aliso.jpg')}}" class="card-img-top" alt="Imagen 2">
+          <div class="card-body">
+            <h5 class="card-title">Aliso</h5>
+            <p class="card-text">Árbol que alcanza los 25 m de altura y los 45cm de diámetro en su tronco, tiene
+              corteza lisa de color gris oscuro, copa irregular, normalmente tiene forma piramidal o de parasol y es
+              de color verde grisáceo o verde ferrugineo; sus ramas crecen de forma horizontal; sus raíces producen
+              retoños y poseen bacterias nitrificadoras, hojas que miden 8 centímetros de largo por 5 de ancho son
+              simples, alternas, dentadas. </p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="{{ url_for('static', filename='images/arrayan.jpg')}}" class="card-img-top" alt="Imagen 3">
+          <div class="card-body">
+            <h5 class="card-title">Arrayan</h5>
+            <p class="card-text">Árboles pequeños de follaje denso, a veces con corteza de guayabo, esto es,
+              desprendible en grandes placas que, al caer, dejan expuestas superficies lisas de un tono más claro que
+              el resto del tronco, hojas redondeadas, pequeñas de textura dura y opuesta. Estas al quebrarlas, liberan
+              un agradable olor perfumado. Flores blancas, con numerosos estambres, frutos pequeños y de color rojo o
+              negro. Los frutos miden 3 centímetros de diámetro, son drupas; las semillas son de color café, miden 2
+              centímetros de diámetro.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="{{ url_for('static', filename='images/borrachero_blanco.png')}}" class="card-img-top" alt="Rachero Blanco">
+          <div class="card-body">
+            <h5 class="card-title">Borrachero Blanco</h5>
+            <p class="card-text">Árbol que alcanza los 10 metros de altura y 30 centímetros de diámetro en su tallo
+              que es quebradizo y posee corteza lisa de color verde, su copa tiene forma irregular y densa, las ramas
+              son densas y muy vidriosas, las raíces poco profundas. Las hojas miden 25 de centímetros por 10 de
+              ancho, tienen forma de hélices son angostas en sus extremos y redondas en su centro. Las flores miden
+              entre 25 y 35 centímetros se encuentran dispuestos en forma solitaria, sin vistosas, sus 5 pétalos están
+              unidos entre sí.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="{{ url_for('static', filename='images/ciro.jpg')}}" class="card-img-top" alt="Ciro">
+          <div class="card-body">
+            <h5 class="card-title">Ciro</h5>
+            <p class="card-text">Alcanza los 5 m de altura y los 15 cm de diámetro en su tronco, que es torcido y
+              posee corteza de color gris; su copa tiene forma redonda; follaje denso y de color verde claro su
+              ramificación comienza a baja altura; sus raíces son superficiales; es común observarlo como arbusto. En
+              Colombia se encuentra en las cordilleras Central y Oriental; en el departamento de Cundinamarca se
+              observa en los cerros y lomeríos circundantes a la Sabana de Bogotá, en la región del Chucua y en los
+              municipios de Bojacá, Fúquene Ubaté y Zipaquirá.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="{{ url_for('static', filename='images/curubo.jpg')}}" class="card-img-top" alt="Curubo">
+          <div class="card-body">
+            <h5 class="card-title">Curubo</h5>
+            <p class="card-text"> Es un bejuco muy ramificado posee vellosidades en sus tallos estos son estriados y
+              tienen zarcillos. Las hojas miden 10 cm. De diámetro son simples, tienen tres lóbulos son alternas el
+              borde es aserrado, por su frente son de color verde oscuro y por su revés verde claro, las flores miden
+              15 cm. De largo y 4 de ancho son solitarias están divididas en 5 partes el cáliz y corona forman un
+              tubo, los 5 pétalos son carnosos de color rosado. Los frutos miden entre 6 y 10 cm. De largo y entre 3 y
+              4 de ancho. Son bayas carnosas, tienen forma oblonga. Las semillans miden 6 mm. De largo son ovaladas, y
+              de color negro.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="{{ url_for('static', filename='images/DientedeLeon.jpeg')}}" class="card-img-top" alt="Diente de León">
+          <div class="card-body">
+            <h5 class="card-title">Diente de leon</h5>
+            <p class="card-text">Planta arrosetada y herbácea, alcanza los 20 cm de altura sin incluir las flores,
+              todos sus órganos segregan un látex de color blanco su raíz penetra en el suelo, las flores se
+              encuentran dispuestas en forma de cabezuela sobre un largo pedúnculo erecto, su color es amarillo</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="{{ url_for('static', filename='images/Frailejon.jpg')}}" class="card-img-top" alt="Frailejon">
+          <div class="card-body">
+            <h5 class="card-title">Frailejon</h5>
+            <p class="card-text">Plantas propias de alta montaña, con hojas arrosetadas, usualmente muy peludas (pelos
+              blanquecinos o amarillentos.) Muchas especies tienen tronco, a veces sin ramas, a veces ramificado, con
+              las hojas agrupadas al final de estas y las hojas muertas usualmente persistentes en el tronco. Las
+              diminutas flores de los frailejones están agrupadas en cabezuelas (llamadas capítulos) que parecen una
+              sola flor como la del girasol y las margaritas(familia de las asteraceos) y son de color amarillo</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="{{ url_for('static', filename='images/Mortiño.jpeg')}}" class="card-img-top" alt="Mortiño">
+          <div class="card-body">
+            <h5 class="card-title">Mortiño</h5>
+            <p class="card-text">Los mortiños del género Hesperomeles son los únicos árboles nativos de Colombia que
+              producen pomos, es decir, frutos del tipo de una manzana. Aunque estos frutos son pequeños, de alrededor
+              de 1 cm de diámetro, si se prueba uno cuando esté maduro se podrá apreciar que su textura realmente
+              tiene su similitud con la de las manzanas. Debido a esto, los mortiños a menudo son conocidos en
+              Colombia como “manzanos”, aunque en su apariencia vegetativa poco se parezcan a un auténtico manzano
+              (Malus).</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="{{ url_for('static', filename='images/sangregados.JPG')}}" class="card-img-top" alt="Sangregado">
+          <div class="card-body">
+            <h5 class="card-title">Sangregado</h5>
+            <p class="card-text">Árboles o arbustos, con hojas de forma acorazonada, a veces con tres puntas. Las
+              hojas viejas tienen un color anaranjado (a veces amarillento) muy distintivo, reconocible a distancia.
+              Miradas de cerca, están cubiertas de pelos en forma de estrella o de apariencia granulosa y muestran dos
+              glándulas en forma de fósforo diminuto en el ápice del tallo de la hoja (pecíolo). Al arrancar una hoja
+              sale abundante látex, transparente, amarillento o rojizo de la herida. los habitantes de esta región
+              utilizan las hojas de esta planta para forrar los quesos campesinos, pues según ellos les da un toque
+              original de su región.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="{{ url_for('static', filename='images/UvoMonte.jpeg')}}" class="card-img-top" alt="Uvo de monte">
+          <div class="card-body">
+            <h5 class="card-title">Uvo de Monte</h5>
+            <p class="card-text"> Arbustos o arbolitos, caracterizados por sus hojas duras, alternas. De la base de la
+              hoja suelen salir, además de la vena principal, otras 2 a 6 venas secundarias algo curvas. Las hojas
+              jóvenes suelen tener un color rosado o rojizo característico. Flores carnosas, en forma de botella, de
+              color blanco rosado o rojo.</p>
+          </div>
+        </div>
+      </div>
+      <button class="next" onclick="nextSlide()">&#10095;</button>
+    </div>
+  </section>
+</main>
+{% endblock %}
